@@ -1,0 +1,11 @@
+inspecode:
+  ### tools for HTML
+  htmlhint:
+  jshint:
+  tidy:
+    auto-fix: true
+
+  ### tools for all-languages
+  grep:
+  misspell:
+    auto-fix: true
