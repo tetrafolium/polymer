@@ -5,6 +5,8 @@ inspecode:
   tidy:
     options:
       -omit:
+      -asxhtml:
+      -doctype: omit
     auto-fix: true
 
   ### tools for all-languages
