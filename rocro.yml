@@ -3,6 +3,8 @@ inspecode:
   htmlhint:
   jshint:
   tidy:
+    options:
+      -omit:
     auto-fix: true
 
   ### tools for all-languages
