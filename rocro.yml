@@ -6,7 +6,8 @@ inspecode:
     options:
       -omit:
       #-asxhtml:
-      #--doctype: omit
+      --doctype: omit
+      --escape-scripts: no
     auto-fix: true
 
   ### tools for all-languages
