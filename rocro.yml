@@ -7,7 +7,7 @@ inspecode:
       -omit:
       #-asxhtml:
       --doctype: omit
-      --escape-scripts: no
+      --escape-scripts: false
     auto-fix: true
 
   ### tools for all-languages
