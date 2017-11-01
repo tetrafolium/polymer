@@ -3,12 +3,17 @@ inspecode:
   htmlhint:
   jshint:
   tidy:
+  - ignore: "test/**"
     options:
       -omit:
-      #-asxhtml:
       --doctype: omit
       --escape-scripts: no
-      --omit-optional-tags: yes
+    auto-fix: true
+  - input:  "test/**"
+    options:
+      -omit:
+      --doctype: omit
+      --escape-scripts: no
     auto-fix: true
 
   ### tools for all-languages
