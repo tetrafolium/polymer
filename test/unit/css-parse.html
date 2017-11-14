@@ -1,4 +1,3 @@
-<!doctype html>
 <!--
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -8,22 +7,14 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
-<html>
-<head>
-
-  <meta charset="utf-8">
-
-  <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../../web-component-tester/browser.js"></script>
-
-  <title>css-parse</title>
-
-  <link rel="import" href="../../polymer.html">
-
-</head>
-<body>
-
-  <style id="test">
+<meta charset="utf-8">
+<script src="../../../webcomponentsjs/webcomponents-lite.js">
+</script>
+<script src="../../../web-component-tester/browser.js">
+</script>
+<title>css-parse</title>
+<link rel="import" href="../../polymer.html">
+<style id="test">
     :host {
       background: red;
     }
@@ -49,9 +40,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin-left: 0 !important;
       }
     }
-  </style>
-
-  <style id="test-ignore">
+</style>
+<style id="test-ignore">
     @import '';
 
     /* comment */
@@ -67,9 +57,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /*.aclassThatShouldBeIgnored {
       someProperty: thatMustNotShowUp
     }*/
-  </style>
-
-  <style id="short-escape-sequence">
+</style>
+<style id="short-escape-sequence">
     .\33 d-model {
       border-top: 3px solid red;
     }
@@ -88,16 +77,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .\e33333d-model {
       border-top: 3px solid red;
     }
-  </style>
-
-  <style id="multiple-spaces">
+</style>
+<style id="multiple-spaces">
     .foo  .bar {}
     .foo    .bar {}
     .foo
 
 
     .bar {}
-  </style>
+</style>
 <script>
 
   function sanitizeCss(text) {
@@ -178,6 +166,3 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   });
 </script>
-
-</body>
-</html>

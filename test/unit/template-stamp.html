@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!--
 @license
 Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -8,30 +7,22 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
-<html>
-<head>
-  <meta charset="UTF-8">
-
-  <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../../web-component-tester/browser.js"></script>
-
-  <link rel="import" href="../../lib/mixins/template-stamp.html">
-</head>
-<body>
-
-  <template id="test-template" strip-whitespace>
-    <div id="a">a</div>
-    <div id="eventHandler" on-click="handleClick"></div>
-    <div id="b">b</div>
-    <template id="nestedTemplate">
-      <div on-click="handleClick"></div>
-    </template>
-    <template id="preservedTemplate" preserve-content>
-      <div on-click="shouldNotBeRemoved"></div>
-    </template>
-  </template>
-
-  <script>
+<meta charset="UTF-8">
+<script src="../../../webcomponentsjs/webcomponents-lite.js">
+</script>
+<script src="../../../web-component-tester/browser.js">
+</script>
+<link rel="import" href="../../lib/mixins/template-stamp.html">
+<title></title>
+<template id="test-template" strip-whitespace="">
+<div id="a">a</div>
+<div id="eventHandler" on-click="handleClick"></div>
+<div id="b">b</div>
+<template id="nestedTemplate">
+<div on-click="handleClick"></div></template>
+<template id="preservedTemplate" preserve-content="">
+<div on-click="shouldNotBeRemoved"></div></template></template>
+<script>
     HTMLImports.whenReady(() => {
       class TemplateStamper extends Polymer.TemplateStamp(HTMLElement) {
         connectedCallback() {
@@ -45,9 +36,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       customElements.define('template-stamper', TemplateStamper);
     });
-  </script>
-
-  <script>
+</script> 
+<script>
 
     suite('template-stamp', () => {
 
@@ -93,7 +83,4 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // Note template parsing API is tested in `property-effects-template.html`,
     // combined with adding property effects
 
-  </script>
-
-</body>
-</html>
+</script>
