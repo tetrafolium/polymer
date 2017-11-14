@@ -7,7 +7,7 @@ inspecode:
     options:
       -omit:
       --doctype: omit
-      --escape-scripts: no
+      --escape-scripts: false
     auto-fix: true
   - input:  "test/**"
     options:
