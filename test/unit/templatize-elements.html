@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <dom-module id="x-host">
   <template>
 
-    <x-templatize obj="{{objA}}" prop="{{propA}}" id="templatizeA">
+    <x-template obj="{{objA}}" prop="{{propA}}" id="templatizeA">
       <template>
         <x-child on-tap="handleTap" id="childA"
           outer-prop="{{outerProp}}"
@@ -23,15 +23,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           computed-from-literal="{{computeFromLiteral(33, prop)}}"
         ></x-child>
       </template>
-    </x-templatize>
+    </x-template>
 
-    <x-templatize prop="prop-a" name="templatizeB">
+    <x-template prop="prop-a" name="templatizeB">
       <template>
         <x-child id="childB" computed-from-literal="{{computeFromLiteral(33, prop)}}"></x-child>
       </template>
-    </x-templatize>
+    </x-template>
 
-    <x-templatize-behavior obj="{{objA}}" prop="{{propA}}" id="templatizeC">
+    <x-template-behavior obj="{{objA}}" prop="{{propA}}" id="templatizeC">
       <template>
         <x-child on-tap="handleTap" id="childC"
           outer-prop="{{outerProp}}"
@@ -44,7 +44,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           computed-from-literal="{{computeFromLiteral(33, prop)}}"
         ></x-child>
       </template>
-    </x-templatize>
+    </x-template>
 
   </template>
 </dom-module>
@@ -140,7 +140,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   });
 
   Polymer({
-    is: 'x-templatize-behavior',
+    is: 'x-template-behavior',
     properties: {
       obj: {
         notify: true

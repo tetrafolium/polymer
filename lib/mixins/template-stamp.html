@@ -83,7 +83,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   function createNodeEventHandler(context, eventName, methodName) {
     // Instances can optionally have a _methodHost which allows redirecting where
-    // to find methods. Currently used by `templatize`.
+    // to find methods. Currently used by `template`.
     context = context._methodHost || context;
     let handler = function(e) {
       if (context[methodName]) {

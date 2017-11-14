@@ -785,7 +785,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    */
   function runMethodEffect(inst, property, props, oldProps, info) {
     // Instances can optionally have a _methodHost which allows redirecting where
-    // to find methods. Currently used by `templatize`.
+    // to find methods. Currently used by `template`.
     let context = inst._methodHost || inst;
     let fn = context[info.methodName];
     if (fn) {
@@ -1525,7 +1525,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       // handles two corner cases:
       // (1) clients flush properly when connected/enabled before the host
       // enables; e.g.
-      //   (a) Templatize stamps with no properties and does not flush and
+      //   (a) Template stamps with no properties and does not flush and
       //   (b) the instance is inserted into dom and
       //   (c) then the instance flushes.
       // (2) clients enable properly when not connected/enabled when the host
@@ -2640,7 +2640,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    * fires before host `ready`).
    *
    * However, if `_flushProperties` is called *before* an element is connected,
-   * as for example `Templatize` does, this ordering guarantee cannot be
+   * as for example `Template` does, this ordering guarantee cannot be
    * satisfied because no elements are connected. (Note: Bound elements that
    * receive data do become enqueued clients and are properly ordered but
    * unbound elements are not.)

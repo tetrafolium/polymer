@@ -82,7 +82,7 @@ Polymer_PropertyAccessors.prototype._attributeToProperty = function(attribute, v
 /**
 * @param {string} property Property name to reflect.
 * @param {string=} attribute Attribute name to reflect.
-* @param {*=} value Property value to refect.
+* @param {*=} value Property value to reflect.
 */
 Polymer_PropertyAccessors.prototype._propertyToAttribute = function(property, attribute, value){};
 /**

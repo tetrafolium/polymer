@@ -95,7 +95,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       // Don't override existing assetpath.
       if (!this.__assetpath) {
         // note: assetpath set via an attribute must be relative to this
-        // element's location; accomodate polyfilled HTMLImports
+        // element's location; accommodate polyfilled HTMLImports
         const owner = window.HTMLImports && HTMLImports.importForElement ?
           HTMLImports.importForElement(this) || document : this.ownerDocument;
         const url = Polymer.ResolveUrl.resolveUrl(

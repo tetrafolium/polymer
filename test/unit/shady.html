@@ -114,7 +114,7 @@ test('Reproject', function() {
   var host = document.createElement('x-content-test');
   document.body.appendChild(host);
   host.innerHTML = '<a></a>';
-  // pre-distirbution grab first composed node.
+  // pre-distribution grab first composed node.
   var a = getComposedChildAtIndex(host, 0);
 
   host.shadowRoot.innerHTML = '<x-content-test id="p"></x-content-test>';

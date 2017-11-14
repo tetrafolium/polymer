@@ -418,7 +418,7 @@
 
 - Fix more closure warnings. ([commit](https://github.com/Polymer/polymer/commit/2627e63a))
 
-- slighly better typing for mixin function ([commit](https://github.com/Polymer/polymer/commit/b3dfd38e))
+- slightly better typing for mixin function ([commit](https://github.com/Polymer/polymer/commit/b3dfd38e))
 
 - gesture fixes ([commit](https://github.com/Polymer/polymer/commit/346e2d57))
 
@@ -447,7 +447,7 @@
 
 - Fix typo in  runBindingEffect documentation ([commit](https://github.com/Polymer/polymer/commit/6bd8dcfa))
 
-- Fixes #4601. Client elements can be readied that have already enabled properties. This can happen when templatize is used to create instances with no properties. In this case, in order for properties to flush properly to clients, clients must be flushed. ([commit](https://github.com/Polymer/polymer/commit/06df53d9))
+- Fixes #4601. Client elements can be readied that have already enabled properties. This can happen when template is used to create instances with no properties. In this case, in order for properties to flush properly to clients, clients must be flushed. ([commit](https://github.com/Polymer/polymer/commit/06df53d9))
 
 - [ci skip] Update Changelog ([commit](https://github.com/Polymer/polymer/commit/c4e516f6))
 
@@ -648,7 +648,7 @@
 
 - Adds back the `beforeRegister` method. Users can no longer set the `is` property in this method; however, dynamic property effects can still be installed here. ([commit](https://github.com/Polymer/polymer/commit/7639cf81))
 
-- Fixes #4447. Re-introduce the `hostStack` in order to maintain “client before host” ordering when `_flushProperties` is called before `connectedCallback` (e.g. as Templatize does). ([commit](https://github.com/Polymer/polymer/commit/8467a696))
+- Fixes #4447. Re-introduce the `hostStack` in order to maintain “client before host” ordering when `_flushProperties` is called before `connectedCallback` (e.g. as Template does). ([commit](https://github.com/Polymer/polymer/commit/8467a696))
 
 - Fix custom-style-late tests ([commit](https://github.com/Polymer/polymer/commit/caafef79))
 
@@ -666,7 +666,7 @@
 
 - Doc fix (correct callback name) ([commit](https://github.com/Polymer/polymer/commit/57d22f4c))
 
-- Fixed templatize typo ([commit](https://github.com/Polymer/polymer/commit/b6b43f36))
+- Fixed template typo ([commit](https://github.com/Polymer/polymer/commit/b6b43f36))
 
 - Work around IE/Edge bug with :not([attr]) selectors ([commit](https://github.com/Polymer/polymer/commit/c3036232))
 
@@ -3703,7 +3703,7 @@ The following notable changes have been made since the 2.0 Preview announcement.
 
 - doesn't work in a zip file [\#766](https://github.com/Polymer/polymer/issues/766)
 
-- Paper-Dialog on page load doesnt work in firefox. [\#761](https://github.com/Polymer/polymer/issues/761)
+- Paper-Dialog on page load doesn't work in firefox. [\#761](https://github.com/Polymer/polymer/issues/761)
 
 - Extending input not working in Chromium 37.0.2062.94 Ubuntu 14.10 \(290621\) \(64-bit\) [\#754](https://github.com/Polymer/polymer/issues/754)
 
@@ -4935,7 +4935,7 @@ The following notable changes have been made since the 2.0 Preview announcement.
 
 - @host styles aren't processed for base elements [\#72](https://github.com/Polymer/polymer/issues/72)
 
-- "export" flag attribute documented in platform.js is actually "exportas" [\#64](https://github.com/Polymer/polymer/issues/64)
+- "export" flag attribute documented in platform.js is actually "exports" [\#64](https://github.com/Polymer/polymer/issues/64)
 
 - handlers="..." declarative events listen on the host element and therefore see no event target info for events generated in  shadowDom [\#41](https://github.com/Polymer/polymer/issues/41)
 
